@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+// インナー幅
+$inner: 1200px;
+
+// フォント
+@font-face {
+    font-family: 'honokamarugo';
+    src: url(/common/font/font_1_honokamarugo_1.1.ttf);
+}
+$fontMain: 'Noto Sans JP', sans-serif;
+$fontTitle: honokamarugo, sans-serif;
+
+// カラー
+$cMain: #6699A1;
+
+// 背景
+$cBg_main: #FFFCF9;
+$cBg_contents: #fff;
+
+// テキスト
+$cText_bk: #080B0C;
+$cText_wh: #fff;

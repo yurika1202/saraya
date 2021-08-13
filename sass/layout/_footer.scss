@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@use "../global" as g;
+
+/* footer
+-------------------------------- */
+.ly_footer {
+    margin-top: g.rem(54px);
+    padding-bottom: g.rem(12px);
+
+    @include g.mq() {
+        margin-top: g.rem(102px);
+        padding-bottom: g.rem(19px);    
+    }
+}
+
+.ly_footer_inner {
+    max-width: g.$layout-width-inner;
+    padding: 0 2.78vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include g.mq(sm) {
+        padding: 0 10.67vw;
+        display: block;
+    }
+}

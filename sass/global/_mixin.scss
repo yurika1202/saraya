@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* media-query
+------------------------------------------- */
+$breakpoints: (
+  'sm': (min-width: 577px),
+  'md': (min-width: 769px),
+  'lg': (min-width: 993px),
+  'xl': (min-width: 1201px),
+  'xxl': (min-width: 1401px)
+) !default;
+
+@mixin mq($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+}
