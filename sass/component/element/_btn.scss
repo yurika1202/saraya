@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@use "../../global/" as g;
+
+/* btn
+-------------------------------- */
+.el_btn {
+    display: inline-block;
+    font-size: g.rem(14px);
+}
