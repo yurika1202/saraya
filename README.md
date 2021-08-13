@@ -1,10 +1,10 @@
-#Tableware shop さらや (saraya)
+# Tableware shop さらや (saraya)
 - Fictitious site
 - [Demo page]() / (ID: PASS:)
-##Coding rules
+## Coding rules
 - BEM notation
 - Sass
-##Production
+## Production
 - ～hour
 - Site design
 - Page design
