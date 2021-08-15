@@ -195,6 +195,23 @@ section {
     width: 140%;
   }
 }
+.round-btn {
+  width: 124px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  padding: 0.35em 0 0.4em;
+  background: #6699A1;
+  border: 3px solid #6699A1;
+  border-radius: 30px;
+  -webkit-transition: background 0.3s ease, color 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.round-btn:focus, .round-btn:hover {
+  background: #FFFCF9;
+  color: #6699A1;
+}
+
 /* copy
 -------------------------------- */
 .el_copy {
@@ -374,6 +391,85 @@ section {
 .products-list__text {
   padding-top: 1.125rem;
   letter-spacing: 0.12em;
+}
+
+/* top-news
+----------------------------------------- */
+.news-contents {
+  padding: 2.5rem 5rem;
+  position: relative;
+}
+.news-contents::before, .news-contents::after {
+  content: "";
+  width: 10%;
+  height: 25%;
+  position: absolute;
+}
+.news-contents::before {
+  border-top: 1px solid #080B0C;
+  border-left: 1px solid #080B0C;
+  border-radius: 30px 0 0 0;
+  top: 0;
+  left: 0;
+}
+.news-contents::after {
+  border-right: 1px solid #080B0C;
+  border-bottom: 1px solid #080B0C;
+  border-radius: 0 0 30px 0;
+  bottom: 0;
+  right: 0;
+}
+
+.news-contents__flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.news-list__item {
+  display: inline-block;
+}
+.news-list__item:not(:first-of-type) {
+  margin-top: 1.25rem;
+}
+
+.news-list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+.news-list__link:focus, .news-list__link:hover {
+  background: #6699A1;
+}
+.news-list__link:focus *, .news-list__link:hover * {
+  color: #fff;
+}
+
+.news-list__date {
+  padding-left: 5px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.news-list__title {
+  padding-right: 5px;
+  width: 83%;
+  margin-left: 3.625rem;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 
 /* margin

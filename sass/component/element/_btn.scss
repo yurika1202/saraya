@@ -47,3 +47,20 @@
         width: 140%;
     }
 }
+
+.round-btn {
+    width: 124px;
+    text-align: center;
+    font-weight: 700;
+    color: g.$cText_wh;
+    padding: 0.35em 0 .4em;
+    background: g.$cMain;
+    border: 3px solid g.$cMain;
+    border-radius: 30px;
+    transition: background .3s ease, color .3s ease;
+
+    &:focus, &:hover {
+        background: g.$cBg_main;
+        color: g.$cMain;
+    }
+}
