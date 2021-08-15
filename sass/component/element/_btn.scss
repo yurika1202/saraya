@@ -3,7 +3,64 @@
 
 /* btn
 -------------------------------- */
-.el_btn {
+.btn-wrapper {
+    text-align: center;
+}
+
+.btn {
     display: inline-block;
-    font-size: g.rem(14px);
+    font-size: g.rem(20px);
+}
+
+.arrow-btn {
+    display: inline;
+    padding-bottom: g.rem(20px);
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 160%;
+        height: 14px;
+        border-right: 1px solid g.$cText_bk;
+        border-bottom: 1px solid g.$cText_bk;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) skewX(45deg);
+    }
+
+    &:focus, &:hover {
+        &::before {
+            animation: arrowBtn 1s ease-out;
+        }
+    }
+
+}
+
+@keyframes arrowBtn {
+    0%,
+    100% {
+        width: 160%;
+    }
+    30%,
+    50% {
+        width: 140%;
+    }
+}
+
+.round-btn {
+    width: 124px;
+    text-align: center;
+    font-weight: 700;
+    color: g.$cText_wh;
+    padding: 0.35em 0 .4em;
+    background: g.$cMain;
+    border: 3px solid g.$cMain;
+    border-radius: 30px;
+    transition: background .3s ease, color .3s ease;
+
+    &:focus, &:hover {
+        background: g.$cBg_main;
+        color: g.$cMain;
+    }
 }
