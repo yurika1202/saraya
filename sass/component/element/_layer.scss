@@ -24,3 +24,9 @@
         border-radius: 10px 100px;
     }
 }
+
+.layer_br20 {
+    &::before {
+        border-radius: 20px;
+    }
+}
