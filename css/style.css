@@ -73,6 +73,10 @@ button {
   border: none;
 }
 
+section {
+  margin-top: 200px;
+}
+
 /* header
 -------------------------------- */
 .header {
@@ -82,6 +86,7 @@ button {
   background: rgba(255, 252, 249, 0.5);
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 .header__inner {
@@ -91,6 +96,11 @@ button {
 
 /* main
 -------------------------------- */
+.main__inner {
+  width: 83.333%;
+  margin: 0 auto;
+}
+
 /* footer
 -------------------------------- */
 /* global-nav
@@ -147,15 +157,28 @@ button {
   font-size: 0.625rem;
 }
 
-/* mv
+/* section-title
 ----------------------------------------- */
-.mv {
-  width: 100%;
-  height: 504px;
-  background: url(/top/img/mv.jpg) no-repeat center top/cover;
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-title_left {
+  text-align: left;
+}
+.section-title_cap {
+  text-transform: capitalize;
+}
+
+/* layer
+----------------------------------------- */
+.layer_white {
   position: relative;
 }
-.mv::before {
+.layer_white::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -165,6 +188,18 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.layer_round::before {
+  border-radius: 10px 100px;
+}
+
+/* mv
+----------------------------------------- */
+.mv {
+  width: 100%;
+  height: 504px;
+  background: url(/top/img/mv.jpg) no-repeat center top/cover;
 }
 
 .mv__inner {
@@ -188,6 +223,45 @@ button {
 .mv-contents__lead-text {
   font-size: 0.875rem;
   letter-spacing: 0.13em;
+}
+
+/* about
+----------------------------------------- */
+.about {
+  padding-top: 87px;
+}
+
+.about-contents {
+  width: calc(944 / 1200 * 100%);
+  height: 350px;
+  margin-top: 60px;
+  background: url(/top/img/top_about.jpg) no-repeat center -55px/cover;
+  border-radius: 10px 100px;
+  position: relative;
+}
+.about-contents::after {
+  content: "";
+  width: calc(656 / 944 * 100%);
+  height: 100%;
+  border-radius: 100px 10px;
+  background: #6699A1;
+  opacity: 0.8;
+  position: absolute;
+  top: -175px;
+  right: -27%;
+  z-index: -5;
+}
+
+.about__lead-text {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: 50%;
+  right: 1.875rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* hp_copy

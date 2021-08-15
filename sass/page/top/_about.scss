@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@use "../../global" as g;
+
+/* about
+----------------------------------------- */
+.about {
+    padding-top: 87px;
+}
+
+.about-contents {
+    width: calc(944 / 1200 * 100%);
+    height: 350px;
+    margin-top: 60px;
+    background: url(/top/img/top_about.jpg) no-repeat center -55px / cover;
+    border-radius: 10px 100px;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: calc(656 / 944 * 100%);
+        height: 100%;
+        border-radius: 100px 10px;
+        background: g.$cMain;
+        opacity: .8;
+        position: absolute;
+        top: -175px;
+        right: -27%;
+        z-index: -5;
+    }
+}
+
+.about__lead-text {
+    color: g.$cText_wh;
+    font-weight: 500;
+    font-size: g.rem(24px);
+    letter-spacing: .2em;
+    position: absolute;
+    top: 50%;
+    right: g.rem(30px);
+    transform: translateY(-50%);
+}
