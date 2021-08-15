@@ -3,23 +3,7 @@
 
 /* main
 -------------------------------- */
-.ly_main {
-    max-width: g.$layout-width-inner;
-    padding: 0 2.78vw;
-    margin: g.rem(88px) auto 0;
-
-    @include g.mq(sm) {
-        padding: 0 10.67vw;
-    }
-}
-
-.ly_main_gridContainer {
-    display: grid;
-    grid-template: repeat(2, 46.7756%) / repeat(4, 22.9%);
-    gap: g.rem(40px) 2.75%;
-
-    @include g.mq(sm) {
-        grid-template: repeat(4, 23.1207%) / repeat(2, 46.9966%);
-        gap: g.rem(22px) 6%;
-    }
+.main__inner {
+    width: 83.333%;
+    margin: 0 auto;
 }

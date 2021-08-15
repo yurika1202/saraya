@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@use "../../global/" as g;
+
+/* section-title
+----------------------------------------- */
+.section-title {
+    font-size: g.rem(32px);
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    text-align: center;
+
+    &_left {
+        text-align: left;
+    }
+
+    &_cap {
+        text-transform: capitalize;
+    }
+}

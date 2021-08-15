@@ -3,27 +3,17 @@
 
 /* header
 -------------------------------- */
-.ly_header {
+.header {
     width: 100%;
-    padding: g.rem(32px) 0 g.rem(31px);
-    position: fixed;
+    height: 100px;
+    padding: 35px 0 36px 0;
+    background: rgba(g.$cBg_main, .5);
+    position: sticky;
     top: 0;
-    left: 0;
-    
-    @include g.mq(sm) {
-        padding: g.rem(28px) 0 g.rem(27px);
-    }
+    z-index: 100;
 }
 
-.ly_header_inner {
-    max-width: g.$layout-width-inner;
-    padding: 0 2.78vw;
+.header__inner {
+    width: 66%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @include g.mq(sm) {
-        padding: 0 10.67vw;
-    }
 }
