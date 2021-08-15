@@ -17,13 +17,13 @@
     background: rgba(g.$cMain, .3);
     padding: g.rem(65px) g.rem(40px);
 
+    * + * {
+        margin-top: g.rem(20px);
+    }
+
     dt {
         font-size: g.rem(20px);
         font-weight: 700;
-
-        &:not(:first-of-type) {
-            margin-top: g.rem(20px);
-        }
     }
 
     dd {
