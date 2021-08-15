@@ -472,6 +472,69 @@ section {
   transition: color 0.2s;
 }
 
+/* top-events
+----------------------------------------- */
+.events-banner {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+.events-banner img {
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 5%;
+     object-position: center 5%;
+}
+
+.events-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 5rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.events__info-wrapper {
+  margin-top: 30px;
+}
+
+.events__lead-text {
+  text-align: center;
+}
+
+.events__info-table {
+  width: 65%;
+  margin: 58px auto 0;
+  border-collapse: collapse;
+}
+.events__info-table tr:nth-of-type(-n + 4) {
+  border-bottom: 1px solid #080B0C;
+}
+.events__info-table tr th {
+  width: 35%;
+  font-weight: 700;
+  text-align: center;
+}
+.events__info-table tr th, .events__info-table tr td {
+  vertical-align: middle;
+}
+.events__info-table tr:nth-of-type(-n + 5) th, .events__info-table tr:nth-of-type(-n + 5) td {
+  padding: 1.25em 0;
+}
+
+.teacher-profile__img {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+}
+
+.teacher-profile__name {
+  padding-top: 20px;
+}
+
 /* margin
 ----------------------------------------- */
 .contents_mt {
@@ -480,5 +543,9 @@ section {
 
 .products-btn_mt {
   margin-top: 95px;
+}
+
+.events-btn_mt {
+  margin-top: 75px;
 }
 /*# sourceMappingURL=style.css.map */
