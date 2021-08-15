@@ -31,11 +31,6 @@
     }
 }
 
-.news-contents__flex-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
 .news-list__item {
     display: inline-block;
 
@@ -45,8 +40,6 @@
 }
 
 .news-list__link {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     transition: background .2s;
 

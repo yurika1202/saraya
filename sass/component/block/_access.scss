@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@use "../../global" as g;
+
+/* access
+----------------------------------------- */
+.access__map-wrapper {
+    width: 50%;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.access-info {
+    width: 45%;
+    background: rgba(g.$cMain, .3);
+    padding: g.rem(65px) g.rem(40px);
+
+    dt {
+        font-size: g.rem(20px);
+        font-weight: 700;
+
+        &:not(:first-of-type) {
+            margin-top: g.rem(20px);
+        }
+    }
+
+    dd {
+        line-height: 1.875;
+        margin-top: g.rem(10px);
+    }
+}
