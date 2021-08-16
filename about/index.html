@@ -24,7 +24,7 @@
 
     <header class="under-header">
 
-        <div class="under-header__inner">
+        <div class="under-header__inner flex-wrapper_c">
             <p class="under-header__logo">さらや</p><!-- /.under-header__logo -->
 
             <button class="under-header__nav-btn">
@@ -61,8 +61,8 @@
 
     </header><!-- /.under-header -->
 
-    <div class="top-view__about">
-        <h1 class="page-title">About</h1><!-- /.page-title -->
+    <div class="top-view top-view_about layer_white">
+        <h1 class="top-view__title">About</h1><!-- /.top-view__title -->
     </div><!-- /.top-view -->
 
     <main class="main__inner">
@@ -74,7 +74,7 @@
 
                 <h2 class="concept-title">「食器は料理の着物である」ー北大路魯山人</h2><!-- /.concept-title -->
 
-                <p class="concept-message">
+                <p class="concept-message contents_mt lh_25">
                     美食家として知られる北大路魯山人先生は、食器の選択を非常に重要視されておられました。<br>
                     料理を包み、彩る。<br>
                     美しいうつわは料理の魅力を最大限に引き出す力があります。<br>
@@ -84,26 +84,31 @@
             </div><!-- /.concept-contents -->
 
             <div class="concept__img-wrapper">
-                <img src="/about/img/about01.jpg" alt="さらやの外観" width="454" height="293" loading="lazy" decoding="async">
-                <img src="/about/img/about02.jpg" alt="さらやの商品イメージ" width="454" height="293" loading="lazy" decoding="async">
+                <div class="concept__img concept__img_01 layer_white">
+                    <img src="/about/img/about01.jpg" alt="さらやの外観" width="454" height="293" loading="lazy" decoding="async">
+                </div><!-- /.concept__img -->
+
+                <div class="concept__img concept__img_02 layer_white">
+                    <img src="/about/img/about02.jpg" alt="さらやの商品イメージ" width="454" height="293" loading="lazy" decoding="async">
+                </div><!-- /.concept__img -->
             </div><!-- /.concept__img-wrapper -->
 
         </section><!-- /.concept -->
 
         <!-- message -->
         <section class="message">
+            <h2 class="section-title">さらやについて</h2><!-- /.section-title -->
 
-            <div class="message-contents">
-                <h2 class="section-title">さらやについて</h2><!-- /.section-title -->
+            <div class="message-contents contents_mt">
 
-                <p class="message__text">
+                <p class="message__text lh_25">
                     さらやは新人の食器作家さんの作品を取り扱っています。<br>
                     これまでにない革新的なデザイン、そしてどこか温もりのある手触り。<br>
                     そして、ひとつひとつの食器たちにある個性。<br>
                     あなたと食器の一期一会の出会いを、お待ちしております。
                 </p><!-- /.message__text -->
 
-                <div class="recruit">
+                <div class="recruit about-recruit_mt">
                     <p class="recruit__text">
                         食器作家さんの出品を随時募集しております。<br>
                         お電話またはお問い合わせフォームよりご連絡ください。
@@ -113,71 +118,67 @@
 
         </section><!-- /.message -->
 
-    </main><!-- /.main__inner -->
-
-    <!-- access -->
-    <section class="access">
-
-        <div class="access-contents">
-
+        <!-- access -->
+        <section id="access" class="access">
             <h2 class="section-title">Access</h2><!-- /.section-title -->
 
-            <div class="access__map-wrapper">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.8224439425167!2d139.6666989155021!3d35.60744618021153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f51f0fbffc7b%3A0x92ea42cf08497ba6!2z44CSMTUyLTAwMzUg5p2x5Lqs6YO955uu6buS5Yy66Ieq55Sx44GM5LiY77yR5LiB55uu77yZ4oiS77yY!5e0!3m2!1sja!2sjp!4v1628966321092!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div><!-- /.access__map-wrapper -->
+            <div class="access-contents contents_mt flex-wrapper_sb">
 
-            <dl class="access-info">
-                <dt>さらや</dt>
-                <dd>〒152-0035<br>東京都目黒区自由が丘1-9-8</dd>
+                <div class="access__map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.8224439425167!2d139.6666989155021!3d35.60744618021153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f51f0fbffc7b%3A0x92ea42cf08497ba6!2z44CSMTUyLTAwMzUg5p2x5Lqs6YO955uu6buS5Yy66Ieq55Sx44GM5LiY77yR5LiB55uu77yZ4oiS77yY!5e0!3m2!1sja!2sjp!4v1628966321092!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div><!-- /.access__map-wrapper -->
 
-                <dt>TEL</dt>
-                <dd>090-123-4567</dd>
+                <dl class="access-info">
+                    <dt>さらや</dt>
+                    <dd>〒152-0035<br>東京都目黒区自由が丘1-9-8</dd>
 
-                <dt>営業時間</dt>
-                <dd>10:00~17:00</dd>
+                    <dt>TEL</dt>
+                    <dd>090-123-4567</dd>
 
-                <dt>定休日</dt>
-                <dd>月曜日・水曜日</dd>
+                    <dt>営業時間</dt>
+                    <dd>10:00~17:00</dd>
 
-                <dt>駐車場</dt>
-                <dd>お近くのコインパーキングをご利用ください。</dd>
-            </dl><!-- /.access-info -->
+                    <dt>定休日</dt>
+                    <dd>月曜日・水曜日</dd>
 
-        </div><!-- /.access-contents -->
+                    <dt>駐車場</dt>
+                    <dd>お近くのコインパーキングをご利用ください。</dd>
+                </dl><!-- /.access-info -->
 
-    </section><!-- /.access -->
+            </div><!-- /.access-contents -->
 
-    <!-- sns -->
-    <section class="sns">
+        </section><!-- /.access -->
 
-        <div class="sns-contents">
+        <!-- sns -->
+        <section class="sns">
+            <h2 class="section-title section-title_cap">Follow us</h2><!-- /.section-title -->
 
-            <h2 class="section-title">Follow us</h2><!-- /.section-title -->
+            <div class="sns-contents contents_mt">
 
-            <ul class="sns-list">
-                <li class="sns-list__item"><a href="#" class="sns-list__link"><i class="fab fa-instagram"></i></a></li><!-- /.sns-list__item -->
-                <li class="sns-list__item"><a href="#" class="sns-list__link"><i class="fab fa-twitter"></i></a></li><!-- /.sns-list__item -->
-                <li class="sns-list__item"><a href="#" class="sns-list__link"><i class="fab fa-facebook-f"></i></a></li><!-- /.sns-list__item -->
-                <li class="sns-list__item"><a href="#" class="sns-list__link"><i class="fas fa-rss"></i></a></li><!-- /.sns-list__item -->
-            </ul><!-- /.sns-list -->
+                <ul class="sns-list flex-wrapper_c">
+                    <li class="sns-list__item"><a href="#" class="sns-list__link"><i class="fab fa-instagram"></i></a></li><!-- /.sns-list__item -->
+                    <li class="sns-list__item"><a href="#" class="sns-list__link"><i class="fab fa-twitter"></i></a></li><!-- /.sns-list__item -->
+                    <li class="sns-list__item"><a href="#" class="sns-list__link"><i class="fab fa-facebook-f"></i></a></li><!-- /.sns-list__item -->
+                    <li class="sns-list__item"><a href="#" class="sns-list__link"><i class="fas fa-rss"></i></a></li><!-- /.sns-list__item -->
+                </ul><!-- /.sns-list -->
 
-        </div><!-- /.sns-contents -->
+            </div><!-- /.sns-contents -->
 
-    </section><!-- /.sns -->
+        </section><!-- /.sns -->
 
-</main><!-- /.main__inner -->
+    </main><!-- /.main__inner -->
 
-<footer class="footer">
+    <footer class="footer">
 
-    <div class="footer-contents">
+        <div class="footer-contents">
 
-        <small class="footer__copy">COPYRIGHT © SARAYA. ALL RIGHTS RESERVED.</small><!-- /.footer__copy -->
+            <small class="copy">CopyRight © SARAYA. All Rights Reserved.</small><!-- /.copy -->
 
-    </div><!-- /.footer-contents -->
+        </div><!-- /.footer-contents -->
 
-    <div class="footer__to-top"></div><!-- /.footer__to-top -->
+        <div class="to-top"></div><!-- /.to-top -->
 
-</footer><!-- /.footer -->
+    </footer><!-- /.footer -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="/js/script.js"></script>

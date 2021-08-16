@@ -95,6 +95,28 @@ section {
   margin: 0 auto;
 }
 
+/* under-header
+-------------------------------- */
+.under-header {
+  width: 100%;
+  height: 100px;
+  padding: 27px 0 28px;
+  background: rgba(255, 252, 249, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.under-header__inner {
+  width: 77%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
 /* main
 -------------------------------- */
 .main__inner {
@@ -203,6 +225,93 @@ section {
           transform: translate(-50%, -50%);
 }
 
+/* under-header
+----------------------------------------- */
+.under-header__logo {
+  font-family: honokamarugo, sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.25;
+}
+
+.under-header__nav-btn {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+}
+.under-header__nav-btn > span {
+  width: 100%;
+  height: 3px;
+  background: #080B0C;
+  position: absolute;
+  left: 0;
+}
+.under-header__nav-btn > span:first-of-type {
+  top: 0;
+}
+.under-header__nav-btn > span:nth-of-type(2) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.under-header__nav-btn > span:last-of-type {
+  bottom: 0;
+}
+
+.under-header__open-contents {
+  display: none;
+}
+
+/* top-view
+----------------------------------------- */
+.top-view {
+  width: 100%;
+  height: 400px;
+  margin-top: 100px;
+  position: relative;
+}
+.top-view_about {
+  background: url(/about/img/about_topview.jpg) no-repeat center 26%/cover;
+}
+
+.top-view__title {
+  font-size: 3.125rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -20px;
+  left: 40px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/* recruit
+----------------------------------------- */
+.recruit {
+  width: 59%;
+  margin: 0 auto;
+  padding: 26px 50px 27px;
+  position: relative;
+}
+.recruit::before, .recruit::after {
+  content: "";
+  width: 42px;
+  height: 100%;
+  border-top: 1px solid #080B0C;
+  border-bottom: 1px solid #080B0C;
+  position: absolute;
+  top: 0;
+}
+.recruit::before {
+  border-left: 1px solid #080B0C;
+  left: 0;
+}
+.recruit::after {
+  border-right: 1px solid #080B0C;
+  right: 0;
+}
+
 /* btn
 -------------------------------- */
 .btn-wrapper {
@@ -284,6 +393,7 @@ section {
 .section-title {
   font-size: 2rem;
   font-weight: 700;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: center;
 }
@@ -618,6 +728,66 @@ section {
   padding-top: 20px;
 }
 
+/* concept
+----------------------------------------- */
+.concept-contents {
+  text-align: center;
+}
+
+.concept-title {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  padding-bottom: 5px;
+  position: relative;
+}
+.concept-title::before {
+  content: "";
+  width: 103%;
+  height: 1.25rem;
+  background: #6699A1;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -5;
+}
+
+.concept__img-wrapper {
+  margin-top: 180px;
+  height: 293px;
+  position: relative;
+}
+
+.concept__img {
+  width: 454px;
+  height: 293px;
+  position: absolute;
+}
+.concept__img_01 {
+  top: 0;
+  right: 292px;
+}
+.concept__img_01 img {
+  border-radius: 20px;
+}
+.concept__img_02 {
+  top: -100px;
+  right: -120px;
+  z-index: -5;
+}
+.concept__img_02 img {
+  border-radius: 20px 0 0 20px;
+}
+
+/* message
+----------------------------------------- */
+.message-contents {
+  text-align: center;
+}
+
 /* margin
 ----------------------------------------- */
 .contents_mt {
@@ -630,6 +800,10 @@ section {
 
 .events-btn_mt {
   margin-top: 75px;
+}
+
+.about-recruit_mt {
+  margin-top: 80px;
 }
 
 /* flex
@@ -650,5 +824,11 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/* lh
+----------------------------------------- */
+.lh_25 {
+  line-height: 2.5;
 }
 /*# sourceMappingURL=style.css.map */

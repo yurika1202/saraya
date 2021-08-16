@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@use "../../global/" as g;
+
+/* under-header
+----------------------------------------- */
+.under-header__logo {
+    font-family: g.$fontTitle;
+    font-size: g.rem(40px);
+    line-height: 1.25;
+}
+
+.under-header__nav-btn {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+
+    > span {
+        width: 100%;
+        height: 3px;
+        background: g.$cText_bk;
+        position: absolute;
+        left: 0;
+
+        &:first-of-type {
+            top: 0;
+        }
+
+        &:nth-of-type(2) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &:last-of-type {
+            bottom: 0;
+        }
+    }
+}
+
+.under-header__open-contents {
+    display: none;
+}
