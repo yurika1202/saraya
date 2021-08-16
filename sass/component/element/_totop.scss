@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@use "../../global/" as g;
+
+/* to-top
+-------------------------------- */
+.to-top {
+    width: 24px;
+    height: 180px;
+    border-top: 3px solid g.$cMain;
+    border-right: 3px solid g.$cMain;
+    position: absolute;
+    bottom: 70px;
+    right: 127px;
+    transform: skewY(-50deg);
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        width: 3px;
+        height: 30px;
+        background: g.$cBg_main;
+        position: absolute;
+        bottom: -4px;
+        right: -3px;
+    }
+}
