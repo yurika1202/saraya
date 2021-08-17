@@ -321,6 +321,9 @@ section {
 .top-view_about {
   background: url(/about/img/about_topview.jpg) no-repeat center 26%/cover;
 }
+.top-view_products {
+  background: url(/products/img/products_topview.jpg) no-repeat center 65%/cover;
+}
 
 .top-view__title {
   font-size: 3.125rem;
@@ -338,6 +341,7 @@ section {
 ----------------------------------------- */
 .recruit {
   width: 59%;
+  text-align: center;
   margin: 0 auto;
   padding: 26px 50px 27px;
   position: relative;
@@ -836,6 +840,83 @@ section {
   text-align: center;
 }
 
+/* products
+----------------------------------------- */
+.products {
+  text-align: center;
+}
+
+/* artist-products
+----------------------------------------- */
+.artist-products {
+  margin-top: 120px;
+}
+
+.artist-products__banner {
+  width: calc(780 / 1200 * 100%);
+  height: 293px;
+  margin: 0 auto;
+  border-radius: 20px;
+  position: relative;
+}
+.artist-products__banner_yt {
+  background: url(/common/img/yamadatakashi.jpg) no-repeat center 70%/cover;
+}
+.artist-products__banner_n {
+  background: url(/common/img/ndish.jpg) no-repeat center 75%/cover;
+}
+.artist-products__banner_s {
+  background: url(/common/img/saginuma.jpg) no-repeat center 85%/cover;
+}
+.artist-products__banner_na {
+  background: url(/common/img/nana.jpg) no-repeat center 43%/cover;
+}
+
+.artist-products__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  right: 40px;
+  bottom: 60px;
+}
+.artist-products__title_wh {
+  color: #fff;
+}
+
+.artist-products-list {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+.artist-products-list::-webkit-scrollbar {
+  display: none;
+}
+
+.artist-products-list__item:not(:first-of-type) {
+  margin-left: 42px;
+}
+
+.artist-products-list__img {
+  width: 246px;
+  height: 246px;
+}
+.artist-products-list__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.artist-products-list__info {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.artist-products-list__price {
+  font-size: 1.125rem;
+  margin-top: 0.9375rem;
+}
+
 /* margin
 ----------------------------------------- */
 .contents_mt {
@@ -852,6 +933,10 @@ section {
 
 .about-recruit_mt {
   margin-top: 80px;
+}
+
+.products-recruit_mt {
+  margin-top: 180px;
 }
 
 .under-header__sns_mt {
