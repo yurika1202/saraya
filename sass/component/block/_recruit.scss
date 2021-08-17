@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@use "../../global/" as g;
+
+/* recruit
+----------------------------------------- */
+.recruit {
+    width: 59%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 26px 50px 27px;
+    position: relative;
+
+    &::before, &::after {
+        content: '';
+        width: 42px;
+        height: 100%;
+        border-top: 1px solid g.$cText_bk;
+        border-bottom: 1px solid g.$cText_bk;
+        position: absolute;
+        top: 0;
+    }
+
+    &::before {
+        border-left: 1px solid g.$cText_bk;
+        left: 0;
+    }
+
+    &::after {
+        border-right: 1px solid g.$cText_bk;
+        right: 0;
+    }
+}

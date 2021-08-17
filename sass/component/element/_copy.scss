@@ -3,6 +3,9 @@
 
 /* copy
 -------------------------------- */
-.el_copy {
-    font-size: g.rem(10px);
+.copy {
+    color: g.$cText_wh;
+    font-size: g.rem(12px);
+    font-weight: 700;
+    text-transform: uppercase;
 }

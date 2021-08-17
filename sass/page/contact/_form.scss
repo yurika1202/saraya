@@ -1,0 +1,181 @@
+@charset "UTF-8";
+@use '../../global' as g;
+
+/* form
+----------------------------------------- */
+.contact-form {
+    width: 65.555%;
+    margin: 100px auto 0;
+}
+
+.contact-form__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:first-of-type) {
+        margin-top: 30px;
+    }
+
+    &_textarea {
+        align-items: flex-start;
+    }
+
+    &_privacy {
+        text-align: center;
+        margin-top: 85px;
+    }
+}
+
+.contact-form__label {
+    label {
+        font-size: g.rem(20px);
+        font-weight: 500;
+    }
+
+    &_must {
+        padding-right: 105px;
+        position: relative;
+
+        &::after {
+            content: '必須';
+            font-size: g.rem(14px);
+            font-weight: 500;
+            color: g.$cText_wh;
+            padding: 10px 20px;
+            background: g.$cMain;
+            border-radius: 20px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    &_textarea {
+        margin-top: 20px;
+    }
+
+    &_privacy {
+        font-size: g.rem(20px);
+        font-weight: 500;
+        padding-left: 3rem;
+        position: relative;
+
+        input[type="checkbox"] {
+            width: 30px;
+            height: 30px;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            opacity: 0;
+
+            &:checked + .contact-form__checkbox {
+                &::after {
+                    border-bottom: 3px solid g.$cMain;
+                    border-right: 3px solid g.$cMain;
+                    position: absolute;
+                    top: 10%;
+                    left: 3%;
+                    transform: rotate(45deg);
+                    opacity: 1;
+                }
+            }
+
+            &:focus + .contact-form__checkbox,
+            &:hover + .contact-form__checkbox {
+                &::before {
+                    border: 3px solid g.$cMain;
+                }
+            }
+        }
+    }
+}
+
+.contact-form__input {
+    width: 56.5%;
+    height: 65px;
+
+    input, select, textarea {
+        appearance: none;
+        width: 100%;
+        height: 100%;
+        font-family: g.$fontMain;
+        padding: 10px 20px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        transition: border .3s;
+
+        &:focus, &:hover {
+            border: 3px solid g.$cMain;
+        }
+    }
+
+    &_select {
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 15px;
+            height: 15px;
+            border-right: 3px solid #707070;
+            border-bottom: 3px solid #707070;
+            position: absolute;
+            top: 45%;
+            right: 30px;
+            transform: translateY(-50%) rotate(45deg);
+        }
+    }
+
+    &_textarea {
+        height: 360px;
+    }
+}
+
+.contact-form__checkbox {
+    &::before {
+        content: '';
+        width: 30px;
+        height: 30px;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        transition: border .3s;
+    }
+
+    &::after {
+        content: '';
+        width: 6px;
+        height: 16px;
+        opacity: 0;
+        transition: transform .3s;
+    }
+}
+
+.contact-form__privacy-wrapper {
+    width: 82%;
+    height: 340px;
+    padding: 40px 60px;
+    margin: 50px auto 0;
+    border-radius: 10px;
+    border: 1px solid #707070;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 20px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: g.$cMain;
+        border-radius: 20px;
+    }
+}
+
+.contact-form__btn {
+    text-align: center;
+}

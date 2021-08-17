@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@use "../../global" as g;
+
+/* concept
+----------------------------------------- */
+.concept-contents {
+    text-align: center;
+}
+
+.concept-title {
+    display: inline-block;
+    font-size: g.rem(32px);
+    font-weight: 700;
+    letter-spacing: .2em;
+    padding-bottom: 5px;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 103%;
+        height: g.rem(20px);
+        background: g.$cMain;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -5;
+    }
+}
+
+.concept__img-wrapper {
+    margin-top: 180px;
+    height: 293px;
+    position: relative;
+}
+
+.concept__img {
+    width: 454px;
+    height: 293px;
+    position: absolute;
+
+    &_01 {
+        top: 0;
+        right: 292px;
+
+        img {
+            border-radius: 20px;
+        }
+    }
+
+    &_02 {
+        top: -100px;
+        right: -120px;
+        z-index: -5;
+
+        img {
+            border-radius: 20px 0 0 20px;
+        }
+    }
+}
