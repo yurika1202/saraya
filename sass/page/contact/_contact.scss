@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@use "../../global" as g;
+
+/* contact
+----------------------------------------- */
+.contact-contents {
+    text-align: center;
+    width: 65.555%;
+    margin: 200px auto 0;
+}
+
+.tel-link {
+    display: inline;
+    font-size: g.rem(20px);
+    font-weight: 500;
+    padding-left: 3.5em;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 2em;
+        height: 2em;
+        background: url(/contact/img/tel-icon.svg) no-repeat center center / contain;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+}
+
+.contact-message {
+    &:not(:first-of-type) {
+        margin-top: 30px;
+    }
+}
+
+.contact-message__wrapper {
+    text-align: left;
+    margin-top: 100px;
+}
+
+.contact-message__title {
+    display: inline-block;
+    font-size: g.rem(20px);
+    font-weight: 700;
+    padding: 5px 10px 5px 3em;
+	list-style: none;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+        content: "\f0d7";
+        font-family: "Font Awesome 5 Free";
+        font-size: 2em;
+        color: g.$cText_bk;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        transition: transform .3s, color .3s;
+    }
+
+    &::-webkit-details-marker {
+        display: none;
+    }
+
+    &:focus, &:hover,
+    .contact-message[open] & {
+        background: g.$cMain;
+        color: g.$cText_wh;
+
+        &::before {
+            color: g.$cText_wh;
+            transform: translateY(-50%) scaleY(-1);
+        }
+    }
+}
+
+.contact-message__contents {
+    line-height: 1.875;
+    padding: 18px 0 0 40px;
+}
+
+.copy-list {
+    margin-top: 10px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.attention-list {
+    margin-top: 10px;
+}
+
+.attention-list__item {
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+        content: '※';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+}

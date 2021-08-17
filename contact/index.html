@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 
-<title>さらや | CONTACT</title>
+<title>さらや</title>
 
 <meta name="description"  content="自由が丘にある、新人作家作品専門の食器屋さん">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -24,10 +24,10 @@
 
     <header class="under-header">
 
-        <div class="under-header__inner">
+        <div class="under-header__inner flex-wrapper_c">
             <p class="under-header__logo">さらや</p><!-- /.under-header__logo -->
 
-            <button class="under-header__nav-btn">
+            <button type="button" class="under-header__nav-btn">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -36,8 +36,8 @@
 
         <div class="under-header__open-contents">
             <nav class="under-header__nav">
-                <ul class="under-header__nav-list">
-                    <li class="under-header__nav-item"><a href="index.html" class="under-header__nav-link">Top</a><!-- /.under-header__nav-link --></li><!-- /.under-header__nav-item -->
+                <ul class="under-header__nav-list flex-wrapper_c">
+                    <li class="under-header__nav-item"><a href="/index.html" class="under-header__nav-link">Top</a><!-- /.under-header__nav-link --></li><!-- /.under-header__nav-item -->
                     <li class="under-header__nav-item"><a href="/about/index.html" class="under-header__nav-link">About</a><!-- /.under-header__nav-link --></li><!-- /.under-header__nav-item -->
                     <li class="under-header__nav-item"><a href="/products/index.html" class="under-header__nav-link">Products</a><!-- /.under-header__nav-link --></li><!-- /.under-header__nav-item -->
                     <li class="under-header__nav-item"><a href="/contact/index.html" class="under-header__nav-link">Contact</a><!-- /.under-header__nav-link --></li><!-- /.under-header__nav-item -->
@@ -45,11 +45,11 @@
             </nav><!-- /.under-header__nav -->
 
             <!-- sns -->
-            <div class="sns">
-                <div class="sns-contents">
-                    <h2 class="section-title">Follow us</h2><!-- /.section-title -->
+            <div class="under-header__sns contents_mt">
+                <h2 class="section-title section-title_cap">Follow us</h2><!-- /.section-title -->
 
-                    <ul class="sns-list">
+                <div class="sns-contents under-header__sns_mt">
+                    <ul class="sns-list flex-wrapper_c">
                         <li class="sns-list__item"><a href="#" class="sns-list__link"><i class="fab fa-instagram"></i></a></li><!-- /.sns-list__item -->
                         <li class="sns-list__item"><a href="#" class="sns-list__link"><i class="fab fa-twitter"></i></a></li><!-- /.sns-list__item -->
                         <li class="sns-list__item"><a href="#" class="sns-list__link"><i class="fab fa-facebook-f"></i></a></li><!-- /.sns-list__item -->
@@ -61,44 +61,50 @@
 
     </header><!-- /.under-header -->
 
-    <div class="top-view__contact">
-        <h1 class="page-title">Contact</h1><!-- /.page-title -->
+    <div class="top-view top-view_contact layer_white">
+        <h1 class="top-view__title">Contact</h1><!-- /.top-view__title -->
     </div><!-- /.top-view -->
 
     <main class="main__inner">
 
-        <div class="contact-contents">
+        <section class="contact-contents">
 
-            <a class="tel-link" href="tel:090-123-4567">お電話でのお問い合わせははこちら</a><!-- /.tel-link -->
+            <a class="tel-link lh_25" href="tel:090-123-4567">お電話でのお問い合わせはこちら</a><!-- /.tel-link -->
 
-            <div class="contact-message">
+            <div class="contact-message__wrapper">
                 <details class="contact-message contact-message__buy">
                     <summary class="contact-message__title">作品のご購入をご検討中の方へ</summary><!-- /.contact-message__title -->
-                    <p class="contact-message__text">以下をコピーしてご記入ください。</p><!-- /.contact-message__text -->
-                    <ul class="copy-list">
-                        <li class="copy-list__item">作品名</li><!-- /.copy-list__item -->
-                        <li class="copy-list__item">作家名</li><!-- /.copy-list__item -->
-                        <li class="copy-list__item">ご希望の受取方法　店舗or郵送</li><!-- /.copy-list__item -->
-                    </ul><!-- /.copy-list -->
-                    <ul class="attention-list">
-                        <li class="attention-list__item">郵送をご希望の方は、別途送料がかかります。</li><!-- /.attention-list__item -->
-                        <li class="attention-list__item">郵送をご希望の方のお支払い方法は、銀行振り込み（手数料はお客様負担）のみとなります。</li><!-- /.attention-list__item -->
-                    </ul><!-- /.attention-list -->
+
+                    <div class="contact-message__contents">
+                        <p class="contact-message__text">以下をコピーしてご記入ください。</p><!-- /.contact-message__text -->
+                        <ul class="copy-list">
+                            <li class="copy-list__item">作品名</li><!-- /.copy-list__item -->
+                            <li class="copy-list__item">作家名</li><!-- /.copy-list__item -->
+                            <li class="copy-list__item">ご希望の受取方法　店舗or郵送</li><!-- /.copy-list__item -->
+                        </ul><!-- /.copy-list -->
+                        <ul class="attention-list">
+                            <li class="attention-list__item">郵送をご希望の方は、別途送料がかかります。</li><!-- /.attention-list__item -->
+                            <li class="attention-list__item">郵送をご希望の方のお支払い方法は、銀行振り込み（手数料はお客様負担）のみとなります。</li><!-- /.attention-list__item -->
+                        </ul><!-- /.attention-list -->
+                    </div><!-- /.contact-message__contents -->
                 </details><!-- /.contact-message -->
 
                 <details class="contact-message contact-message__listing">
                     <summary class="contact-message__title">出品をご希望の方へ</summary><!-- /.contact-message__title -->
-                    <p class="contact-message__text">以下をコピーしてご記入ください。</p><!-- /.contact-message__text -->
-                    <ul class="copy-list">
-                        <li class="copy-list__item">主に制作しているもの</li><!-- /.copy-list__item -->
-                    </ul><!-- /.copy-list -->
-                    <ul class="attention-list">
-                        <li class="attention-list__item">出品に際しての詳細は返信でお伝えいたします。</li><!-- /.attention-list__item -->
-                    </ul><!-- /.attention-list -->
-                </details><!-- /.contact-message -->
-            </div><!-- /.contact-message -->
 
-        </div><!-- /.contact-contents -->
+                    <div class="contact-message__contents">
+                        <p class="contact-message__text">以下をコピーしてご記入ください。</p><!-- /.contact-message__text -->
+                        <ul class="copy-list">
+                            <li class="copy-list__item">主に制作しているもの</li><!-- /.copy-list__item -->
+                        </ul><!-- /.copy-list -->
+                        <ul class="attention-list">
+                            <li class="attention-list__item">出品に際しての詳細は返信でお伝えいたします。</li><!-- /.attention-list__item -->
+                        </ul><!-- /.attention-list -->
+                    </div><!-- /.contact-message__contents -->
+                </details><!-- /.contact-message -->
+            </div><!-- /.contact-message__wrapper -->
+
+        </section><!-- /.contact-contents -->
 
         <form method="post" class="contact-form">
             <dl>
@@ -109,7 +115,7 @@
                         <label for="category">お問い合わせ種別</label>
                     </dt><!-- /.contact-form__label -->
 
-                    <dd class="contact-form__input">
+                    <dd class="contact-form__input contact-form__input_select">
                         <select id="category">
                             <option value="選択してください">選択してください</option>
                             <option value="イベントの応募">イベントの応募</option>
@@ -154,12 +160,12 @@
                 </div><!-- /.contact-form__item -->
 
                 <!-- お問い合わせ内容 -->
-                <div class="contact-form__item">
-                    <dt class="contact-form__label contact-form__label_must">
+                <div class="contact-form__item contact-form__item_textarea">
+                    <dt class="contact-form__label contact-form__label_must contact-form__label_textarea">
                         <label for="text">お問い合わせ内容</label>
                     </dt><!-- /.contact-form__label -->
 
-                    <dd class="contact-form__input">
+                    <dd class="contact-form__input contact-form__input_textarea">
                         <textarea id="text" enterkeyhint="send" required></textarea>
                     </dd><!-- /.contact-form__input -->
                 </div><!-- /.contact-form__item -->
@@ -167,31 +173,31 @@
             </dl>
 
             <!-- プライバシーポリシー -->
-            <div class="contact-form__item">
+            <div class="contact-form__item_privacy">
                 <label for="privacy" class="contact-form__label_privacy">
                     <input type="checkbox" id="privacy" required>
                     <span class="contact-form__checkbox"></span>
+                    プライバシーポリシーに同意する
                 </label><!-- /.contact-form__label_privacy -->
             </div><!-- /.contact-form__item -->
 
             <div class="contact-form__privacy-wrapper">
                 <p class="privacy-title">プライバシーポリシー</p><!-- /.privacy-text__title -->
-                <p class="privacy-text">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字</p><!-- /.privacy-text -->
+                <p class="privacy-text">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p><!-- /.privacy-text -->
             </div><!-- /.contact-form__privacy-wrapper -->
 
             <!-- 送信 -->
-            <div class="contact-form__btn">
+            <div class="contact-form__btn contact-btn_mt">
                 <button class="btn send-btn" type="submit">送信</button>
             </div><!-- /.contact-form__btn -->
 
         </form><!-- /.contact-form -->
 
         <!-- access -->
-        <section class="access">
+        <section id="access" class="access">
+            <h2 class="section-title">Access</h2><!-- /.section-title -->
 
-            <div class="access-contents">
-
-                <h2 class="section-title">Access</h2><!-- /.section-title -->
+            <div class="access-contents contents_mt flex-wrapper_sb">
 
                 <div class="access__map-wrapper">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.8224439425167!2d139.6666989155021!3d35.60744618021153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f51f0fbffc7b%3A0x92ea42cf08497ba6!2z44CSMTUyLTAwMzUg5p2x5Lqs6YO955uu6buS5Yy66Ieq55Sx44GM5LiY77yR5LiB55uu77yZ4oiS77yY!5e0!3m2!1sja!2sjp!4v1628966321092!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -220,12 +226,11 @@
 
         <!-- sns -->
         <section class="sns">
+            <h2 class="section-title section-title_cap">Follow us</h2><!-- /.section-title -->
 
-            <div class="sns-contents">
+            <div class="sns-contents contents_mt">
 
-                <h2 class="section-title">Follow us</h2><!-- /.section-title -->
-
-                <ul class="sns-list">
+                <ul class="sns-list flex-wrapper_c">
                     <li class="sns-list__item"><a href="#" class="sns-list__link"><i class="fab fa-instagram"></i></a></li><!-- /.sns-list__item -->
                     <li class="sns-list__item"><a href="#" class="sns-list__link"><i class="fab fa-twitter"></i></a></li><!-- /.sns-list__item -->
                     <li class="sns-list__item"><a href="#" class="sns-list__link"><i class="fab fa-facebook-f"></i></a></li><!-- /.sns-list__item -->
@@ -242,11 +247,11 @@
 
         <div class="footer-contents">
 
-            <small class="footer__copy">COPYRIGHT © SARAYA. ALL RIGHTS RESERVED.</small><!-- /.footer__copy -->
+            <small class="copy">CopyRight © SARAYA. All Rights Reserved.</small><!-- /.copy -->
 
         </div><!-- /.footer-contents -->
 
-        <div class="footer__to-top"></div><!-- /.footer__to-top -->
+        <div class="to-top"></div><!-- /.to-top -->
 
     </footer><!-- /.footer -->
 
