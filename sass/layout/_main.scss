@@ -6,4 +6,8 @@
 .main__inner {
     width: 83.333%;
     margin: 0 auto;
+
+    @include g.mq(sm) {
+        width: 90%;
+    }
 }

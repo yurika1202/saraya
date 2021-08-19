@@ -10,6 +10,10 @@
 .btn {
     display: inline-block;
     font-size: g.rem(20px);
+
+    @include g.mq(sm) {
+        font-size: g.rem(18px);
+    }
 }
 
 .arrow-btn {
@@ -35,6 +39,11 @@
         }
     }
 
+    @include g.mq(sm) {
+        &::before {
+            width: 130%;
+        }
+    }
 }
 
 @keyframes arrowBtn {
@@ -62,6 +71,10 @@
     &:focus, &:hover {
         background: g.$cBg_main;
         color: g.$cMain;
+    }
+
+    @include g.mq(sm) {
+        width: 30%;
     }
 }
 

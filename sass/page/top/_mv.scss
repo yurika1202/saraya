@@ -7,6 +7,10 @@
     width: 100%;
     height: 504px;
     background: url(/top/img/mv.jpg) no-repeat center top / cover;
+
+    @include g.mq(sm) {
+        height: 600px;
+    }
 }
 
 .mv__inner {
@@ -24,10 +28,22 @@
         font-family: g.$fontTitle;
         font-size: g.rem(100px);
         line-height: 1.2;
+
+        @include g.mq(sm) {
+            font-size: 18vw;
+        }
     }
 
     &__lead-text {
         font-size: g.rem(14px);
         letter-spacing: .13em;
+
+        @include g.mq(sm) {
+            font-size: 2vw;
+        }
+    }
+
+    @include g.mq(sm) {
+        top: 140px;
     }
 }

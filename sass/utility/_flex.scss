@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@use "../global" as g;
 
 /* flex
 ----------------------------------------- */
@@ -10,4 +11,16 @@
 .flex-wrapper_c {
     display: flex;
     justify-content: center;
+}
+
+.flex-wrapper_md-block {
+    @include g.mq(md) {
+        display: block;
+    }
+}
+
+.flex-wrapper_sm-block {
+    @include g.mq(sm) {
+        display: block;
+    }
 }

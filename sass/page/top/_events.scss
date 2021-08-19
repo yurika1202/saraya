@@ -13,14 +13,21 @@
         object-fit: cover;
         object-position: center 5%;
     }
+
+    @include g.mq(sm) {
+        height: 150px;
+    }
 }
 
 .events-title {
     font-size: g.rem(20px);
     font-weight: 700;
+    background: rgba(#fff, .2);
+    padding: 0 .5em;
+    border-radius: 5px;
     position: absolute;
     top: 50%;
-    left: g.rem(80px);
+    left: 7%;
     transform: translateY(-50%);
 }
 
@@ -46,19 +53,62 @@
             width: 35%;
             font-weight: 700;
             text-align: center;
+
+            @include g.mq(xl) {
+                width: 45%;
+            }
+
+            @include g.mq(md) {
+                text-align: left;
+                width: 100%;
+            }
         }
 
         th, td {
             vertical-align: middle;
-        }
 
+            @include g.mq(md) {
+                display: block;
+            }
+        }
 
         &:nth-of-type(-n + 5) {
             th, td {
                 padding: 1.25em 0;
+
+                @include g.mq(md) {
+                    padding: 1rem 0 0;
+                }
+            }
+
+            td {
+                @include g.mq(md) {
+                    padding: .25rem 0 1rem;
+                }
             }
         }
 
+        &:last-of-type {
+            th {
+                @include g.mq(md) {
+                    margin: 0 auto;
+                }
+            }
+
+            td {
+                @include g.mq(md) {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    @include g.mq(lg) {
+        width: 80%;
+    }
+
+    @include g.mq(md) {
+        width: 90%;
     }
 }
 
@@ -70,4 +120,9 @@
 
 .teacher-profile__name {
     padding-top: 20px;
+
+    @include g.mq(md) {
+        padding-top: 10px;
+        text-align: center;
+    }
 }
