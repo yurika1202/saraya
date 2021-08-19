@@ -11,11 +11,19 @@
     position: sticky;
     top: 0;
     z-index: 100;
+
+    @include g.mq(md) {
+        position: static;
+    }
 }
 
 .header__inner {
-    width: 66%;
+    width: clamp(690px, 66%, 950px);
     margin: 0 auto;
+
+    @include g.mq(md) {
+        display: none;
+    }
 }
 
 /* under-header

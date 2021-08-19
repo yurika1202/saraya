@@ -24,6 +24,23 @@
         right: -27%;
         z-index: -5;
     }
+
+    @include g.mq(md) {
+        width: 90%;
+        height: 500px;
+
+        &::after {
+            width: 75%;
+            top: -100px;
+            right: -13%;
+        }
+    }
+
+    @include g.mq(sm) {
+        &::after {
+            top: -65px;
+        }
+    }
 }
 
 .about__link {
@@ -36,6 +53,10 @@
     &:focus, &:hover {
         transform: scale(1.02);
     }
+
+    @include g.mq(lg) {
+        background-position: center center;
+    }
 }
 
 .about__lead-text {
@@ -47,4 +68,18 @@
     top: 50%;
     right: g.rem(30px);
     transform: translateY(-50%);
+
+    @include g.mq(xl) {
+        font-size: g.rem(20px);
+    }
+
+    @include g.mq(lg) {
+        width: 353px;
+    }
+
+    @include g.mq(sm) {
+        width: auto;
+        line-height: 2;
+        right: 2%;
+    }
 }

@@ -6,6 +6,10 @@
 .sns-list {
     * + * {
         margin-left: 42px;
+
+        @include g.mq(sm) {
+            margin-left: 15px;
+        }
     }
 }
 

@@ -10,7 +10,7 @@
     border-right: 3px solid g.$cMain;
     position: absolute;
     bottom: 70px;
-    right: 127px;
+    right: 8%;
     transform: skewY(-50deg);
     cursor: pointer;
 
@@ -22,5 +22,13 @@
         position: absolute;
         bottom: -4px;
         right: -3px;
+    }
+
+    @include g.mq(sm) {
+        right: 5%;
+
+        &::after {
+            bottom: 21px;
+        }
     }
 }

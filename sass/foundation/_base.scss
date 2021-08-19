@@ -36,4 +36,10 @@ button {
 
 section {
     margin-top: 200px;
+
+    @include g.mq(md) {
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
 }

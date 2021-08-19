@@ -29,6 +29,18 @@
         bottom: 0;
         right: 0;
     }
+
+    @include g.mq(md) {
+        padding: g.rem(40px) 4rem;
+
+        &::before, &::after {
+            width: 40%;
+        }
+    }
+
+    @include g.mq(sm) {
+        padding: g.rem(40px) 2rem;
+    }
 }
 
 .news-list__item {
@@ -50,6 +62,10 @@
             color: g.$cText_wh;
         }
     }
+
+    @include g.mq(md) {
+        display: inline-flex;
+    }
 }
 
 .news-list__date {
@@ -64,4 +80,9 @@
     width: 83%;
     margin-left: g.rem(58px);
     transition: color .2s;
+
+    @include g.mq(md) {
+        margin: .3rem 0 0 0;
+        width: 100%;
+    }
 }

@@ -39,17 +39,37 @@
         <div class="header__inner">
 
             <nav class="global-nav">
-                <ul class="global-nav__items">
+                <ul class="global-nav__list flex-wrapper_sb">
                     <li class="global-nav__item"><a href="#about" class="global-nav__link">About</a></li><!-- /.global-nav__item -->
                     <li class="global-nav__item"><a href="#products" class="global-nav__link">Products</a></li><!-- /.global-nav__item -->
                     <li class="global-nav__item"><a href="#news" class="global-nav__link">News</a></li><!-- /.global-nav__item -->
                     <li class="global-nav__item"><a href="#events" class="global-nav__link">Events</a></li><!-- /.global-nav__item -->
                     <li class="global-nav__item"><a href="contact/index.html" class="global-nav__link">Contact</a></li><!-- /.global-nav__item -->
                     <li class="global-nav__item"><a href="#access" class="global-nav__link"><i class="fas fa-map-marker-alt"></i></a></li><!-- /.global-nav__item -->
-                </ul><!-- /.global-nav__items -->
+                </ul><!-- /.global-nav__list -->
             </nav><!-- /.global-nav -->
 
         </div><!-- /.header__inner -->
+
+        <button type="button" class="global-nav__sp-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button><!-- /.header__sp-btn -->
+
+        <div class="open-contents_sp">
+            <nav class="global-nav_sp">
+                <ul class="global-nav__list_sp">
+                    <li class="global-nav__item_sp"><a href="#about" class="global-nav__link global-nav__link_sp">About</a></li><!-- /.global-nav__item_sp -->
+                    <li class="global-nav__item_sp"><a href="#products" class="global-nav__link global-nav__link_sp">Products</a></li><!-- /.global-nav__item_sp -->
+                    <li class="global-nav__item_sp"><a href="#news" class="global-nav__link global-nav__link_sp">News</a></li><!-- /.global-nav__item_sp -->
+                    <li class="global-nav__item_sp"><a href="#events" class="global-nav__link global-nav__link_sp">Events</a></li><!-- /.global-nav__item_sp -->
+                    <li class="global-nav__item_sp"><a href="contact/index.html" class="global-nav__link global-nav__link_sp">Contact</a></li><!-- /.global-nav__item_sp -->
+                    <li class="global-nav__item_sp"><a href="#access" class="global-nav__link global-nav__link_sp"><i class="fas fa-map-marker-alt"></i></a></li><!-- /.global-nav__item_sp -->
+                </ul><!-- /.under-header__nav-list -->
+            </nav><!-- /.under-header__nav -->
+        </div><!-- /.under-header__open-contents -->
+
     </header><!-- /.header -->
 
     <main class="main__inner">
@@ -60,7 +80,7 @@
 
             <div class="about-contents contents_mt">
                 <a href="/about/index.html" class="about__link layer_white layer_round">
-                    <p class="about__lead-text">毎日の食卓にそっと寄り添う、あなただけのうつわ。</p><!-- /.about__lead-text -->
+                    <p class="about__lead-text">毎日の食卓に<br class="br_sp">そっと寄り添う、<br class="br_sp">あなただけの<br class="br_sp">うつわ。</p><!-- /.about__lead-text -->
                 </a><!-- /.about__link -->
             </div><!-- /.about-contents -->
         </section><!-- /.about -->
@@ -71,7 +91,7 @@
 
             <div class="products-contents contents_mt">
 
-                <ul class="products-list">
+                <ul class="products-list flex-wrapper_sb flex-wrapper_sm-block">
                     <li class="products-list__item">
                         <figure class="products-banner products-banner_yt layer_white layer_br20">
                             <img src="/common/img/yamadatakashi.jpg" alt="yamada takashi制作の白いお皿" width="534" height="196" loading="lazy" decoding="async">
@@ -137,21 +157,21 @@
 
                 <ul class="news-list contents_mt">
                     <li class="news-list__item">
-                        <a href="#" class="news-list__link flex-wrapper_sb">
+                        <a href="#" class="news-list__link flex-wrapper_sb flex-wrapper_md-block">
                             <time class="news-list__date" datetime="2021-06-01">2021.6.1</time><!-- /.news-list__date -->
                             <p class="news-list__title">さらやが自由が丘にオープンしました。</p><!-- /.news-list__title -->
                         </a>
                     </li><!-- /.news-list__item -->
 
                     <li class="news-list__item">
-                        <a href="#" class="news-list__link flex-wrapper_sb">
+                        <a href="#" class="news-list__link flex-wrapper_sb flex-wrapper_md-block">
                             <time class="news-list__date" datetime="2021-07-01">2021.7.1</time><!-- /.news-list__date -->
                             <p class="news-list__title">カトラリー作家・nanaさんの作品の取り扱いがはじまりました。</p><!-- /.news-list__title -->
                         </a>
                     </li><!-- /.news-list__item -->
 
                     <li class="news-list__item">
-                        <a href="#" class="news-list__link flex-wrapper_sb">
+                        <a href="#" class="news-list__link flex-wrapper_sb flex-wrapper_md-block">
                             <time class="news-list__date" datetime="2021-07-15">2021.7.15</time><!-- /.news-list__date -->
                             <p class="news-list__title">8月の金継ぎ体験は21日です。</p><!-- /.news-list__title -->
                         </a>
@@ -228,7 +248,7 @@
         <section id="access" class="access">
             <h2 class="section-title">Access</h2><!-- /.section-title -->
 
-            <div class="access-contents contents_mt flex-wrapper_sb">
+            <div class="access-contents contents_mt flex-wrapper_sb flex-wrapper_md-block">
 
                 <div class="access__map-wrapper">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.8224439425167!2d139.6666989155021!3d35.60744618021153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f51f0fbffc7b%3A0x92ea42cf08497ba6!2z44CSMTUyLTAwMzUg5p2x5Lqs6YO955uu6buS5Yy66Ieq55Sx44GM5LiY77yR5LiB55uu77yZ4oiS77yY!5e0!3m2!1sja!2sjp!4v1628966321092!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -278,7 +298,7 @@
 
         <div class="footer-contents">
 
-            <small class="copy">CopyRight © SARAYA. All Rights Reserved.</small><!-- /.copy -->
+            <small class="copy">CopyRight © SARAYA. <br class="br_sp">All Rights Reserved.</small><!-- /.copy -->
 
         </div><!-- /.footer-contents -->
 
