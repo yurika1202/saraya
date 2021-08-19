@@ -26,12 +26,33 @@
         transform: translateX(-50%);
         z-index: -5;
     }
+
+    @include g.mq(md) {
+        font-size: 3.47vw;
+
+        &::before {
+            height: 40%;
+        }
+    }
+
+    @include g.mq(sm) {
+        font-size: 5.7vw;
+
+        &::before {
+            height: 20%;
+        }
+    }
 }
 
 .concept__img-wrapper {
     margin-top: 180px;
     height: 293px;
     position: relative;
+
+    @include g.mq() {
+        position: static;
+        margin-top: 50px;
+    }
 }
 
 .concept__img {
@@ -41,20 +62,39 @@
 
     &_01 {
         top: 0;
-        right: 292px;
+        right: 30%;
 
         img {
             border-radius: 20px;
+            object-fit: cover;
+        }
+
+        @include g.mq(sm) {
+            right: 0;
         }
     }
 
     &_02 {
         top: -100px;
-        right: -120px;
+        right: -10%;
         z-index: -5;
 
         img {
             border-radius: 20px 0 0 20px;
+            object-fit: cover;
+        }
+
+        @include g.mq(sm) {
+            display: none;
+        }
+    }
+
+    @include g.mq(sm) {
+        position: relative;
+        width: 100%;
+
+        &:not(:first-of-type) {
+            margin-top: 20px;
         }
     }
 }

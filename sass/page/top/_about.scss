@@ -5,6 +5,10 @@
 ----------------------------------------- */
 .about {
     padding-top: 87px;
+
+    @include g.mq(md) {
+        margin-top: 0;
+    }
 }
 
 .about-contents {

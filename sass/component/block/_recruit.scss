@@ -29,4 +29,12 @@
         border-right: 1px solid g.$cText_bk;
         right: 0;
     }
+
+    @include g.mq(lg) {
+        width: 80%;
+    }
+
+    @include g.mq(sm) {
+        width: 100%;
+    }
 }
