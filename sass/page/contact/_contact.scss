@@ -7,6 +7,11 @@
     text-align: center;
     width: 65.555%;
     margin: 200px auto 0;
+
+    @include g.mq(md) {
+        width: 100%;
+        margin: 250px auto 0;
+    }
 }
 
 .tel-link {
@@ -25,6 +30,16 @@
         top: 50%;
         left: 0;
         transform: translateY(-50%);
+
+        @include g.mq(sm) {
+            width: 1.5em;
+            height: 1.5em;
+        }
+    }
+
+    @include g.mq(sm) {
+        font-size: 4vw;
+        padding-left: 2em;
     }
 }
 
@@ -64,7 +79,7 @@
         display: none;
     }
 
-    &:focus, &:hover,
+    &:hover,
     .contact-message[open] & {
         background: g.$cMain;
         color: g.$cText_wh;
@@ -73,6 +88,10 @@
             color: g.$cText_wh;
             transform: translateY(-50%) scaleY(-1);
         }
+    }
+
+    @include g.mq(sm) {
+        font-size: 4.5vw;
     }
 }
 
