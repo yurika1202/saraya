@@ -37,7 +37,7 @@
         }
     }
 
-    &.js-open_btn {
+    &.js_open-btn {
         > span {
             &:first-of-type {
                 top: 50%;
@@ -67,7 +67,7 @@
     left: 0;
     transition: top .4s;
 
-    &.js-open_nav {
+    &.js_open-nav {
         top: 100px;
     }
 

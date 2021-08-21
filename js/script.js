@@ -1,23 +1,33 @@
-/* global-nav_sp
+/* ヘッダーメニューのドロワー
 --------------------------------- */
-$(".global-nav__sp-btn").click(function (e) {
-    $(this).toggleClass('js-open_btn');
-    $(".open-contents_sp").toggleClass('js-open_nav');
-});
+const btn = document.getElementById('js_btn');
+const nav = document.getElementById('js_open-contents');
+const navBtn = document.getElementsByClassName('js_navBtn');
 
-$(".global-nav__link_sp").click(function (e) {
-    $(".global-nav__sp-btn").removeClass('js-open_btn');
-    $(".open-contents_sp").removeClass('js-open_nav');
-});
+btn.addEventListener('click', () => {
+    btn.classList.toggle('js_open-btn');
+    nav.classList.toggle('js_open-nav');
+})
 
-/* under-header
+for(let i = 0; i < navBtn.length; i++) {
+    navBtn[i].addEventListener('click', () => {
+        btn.classList.remove('js_open-btn');
+        nav.classList.remove('js_open-nav');
+    })
+}
+
+/* スクロール
 --------------------------------- */
-$(".under-header__nav-btn").click(function (e) {
-    $(this).toggleClass('js-open_btn');
-    $(".under-header__open-contents").toggleClass('js-open_nav');
-});
+$('.nav__item a[href^="#"]').click(function() {
+    var elHash = $(this).attr('href');
+    var pos = $(elHash).offset().top-83;
+    $('body,html').animate({scrollTop: pos}, 500);
+    return false;
+  });
 
-$(".under-header__nav-link").click(function (e) {
-    $(".under-header__nav-btn").removeClass('js-open_btn');
-    $(".under-header__open-contents").removeClass('js-open_nav');
-});
+  $('.nav__items a[href^="#"]').click(function() {
+      var elHash = $(this).attr('href');
+      var smPos = $(elHash).offset().top-100;
+      $('body,html').animate({scrollTop: smPos}, 500);
+      return false;
+  })

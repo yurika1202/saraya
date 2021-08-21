@@ -65,7 +65,7 @@
         }
     }
 
-    &.js-open_btn {
+    &.js_open-btn {
         > span {
             &:first-of-type {
                 top: 50%;
@@ -103,7 +103,7 @@
     transition: right .4s;
     z-index: 100;
 
-    &.js-open_nav {
+    &.js_open-nav {
         right: 30px;
     }
 }
