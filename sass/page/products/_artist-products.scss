@@ -9,6 +9,7 @@
 
 .artist-products__banner {
     width: calc(780 / 1200 * 100%);
+    min-width: 550px;
     height: 293px;
     margin: 0 auto;
     border-radius: 20px;
@@ -28,6 +29,15 @@
 
     &_na {
         background: url(/common/img/nana.jpg) no-repeat center 43% / cover;
+    }
+
+    @include g.mq(md) {
+        width: 100%;
+        min-width: auto;
+    }
+
+    @include g.mq(sm) {
+        height: 160px;
     }
 }
 
@@ -65,6 +75,11 @@
 
     img {
         object-fit: cover;
+    }
+
+    @include g.mq(sm) {
+        width: 180px;
+        height: 180px;
     }
 }
 

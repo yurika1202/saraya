@@ -40,7 +40,7 @@
 }
 
 .under-header__inner {
-    width: 77%;
+    width: clamp(0px, 77%, 1200px);
     margin: 0 auto;
     align-items: center;
     position: relative;

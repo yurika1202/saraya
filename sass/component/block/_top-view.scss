@@ -20,6 +20,10 @@
     &_contact {
         background: url(/contact/img/contact_topview.jpg) no-repeat center 40% / cover;
     }
+
+    @include g.mq(md) {
+        height: 300px;
+    }
 }
 
 .top-view__title {
@@ -28,7 +32,20 @@
     letter-spacing: .2em;
     text-transform: uppercase;
     position: absolute;
-    bottom: -20px;
-    left: 40px;
+    bottom: 90px;
+    left: 160px;
     transform: rotate(90deg);
+    transform-origin: left;
+
+    @include g.mq(md) {
+        left: 100px;
+    }
+
+    @include g.mq(sm) {
+        left: 60px;
+    }
+
+    &_products {
+        bottom: 140px;
+    }
 }
