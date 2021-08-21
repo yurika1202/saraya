@@ -120,7 +120,7 @@ section {
 }
 
 .under-header__inner {
-  width: 77%;
+  width: clamp(0px, 77%, 1200px);
   margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -132,6 +132,7 @@ section {
 -------------------------------- */
 .main__inner {
   width: 83.333%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 @media screen and (max-width: 576px) {
@@ -499,20 +500,25 @@ section {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   position: absolute;
-  bottom: -20px;
-  left: 40px;
+  bottom: 90px;
+  left: 160px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 @media screen and (max-width: 768px) {
   .top-view__title {
-    left: 0;
+    left: 100px;
   }
 }
 @media screen and (max-width: 576px) {
   .top-view__title {
-    left: -13%;
+    left: 60px;
   }
+}
+.top-view__title_products {
+  bottom: 140px;
 }
 
 /* recruit
@@ -1307,6 +1313,7 @@ section {
 
 .artist-products__banner {
   width: calc(780 / 1200 * 100%);
+  min-width: 550px;
   height: 293px;
   margin: 0 auto;
   border-radius: 20px;
@@ -1323,6 +1330,17 @@ section {
 }
 .artist-products__banner_na {
   background: url(/common/img/nana.jpg) no-repeat center 43%/cover;
+}
+@media screen and (max-width: 768px) {
+  .artist-products__banner {
+    width: 100%;
+    min-width: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .artist-products__banner {
+    height: 160px;
+  }
 }
 
 .artist-products__title {
@@ -1358,6 +1376,12 @@ section {
 .artist-products-list__img img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 576px) {
+  .artist-products-list__img {
+    width: 180px;
+    height: 180px;
+  }
 }
 
 .artist-products-list__info {

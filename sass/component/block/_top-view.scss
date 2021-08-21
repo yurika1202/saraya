@@ -32,15 +32,20 @@
     letter-spacing: .2em;
     text-transform: uppercase;
     position: absolute;
-    bottom: -20px;
-    left: 40px;
+    bottom: 90px;
+    left: 160px;
     transform: rotate(90deg);
+    transform-origin: left;
 
     @include g.mq(md) {
-        left: 0;
+        left: 100px;
     }
 
     @include g.mq(sm) {
-        left: -13%;
+        left: 60px;
+    }
+
+    &_products {
+        bottom: 140px;
     }
 }
