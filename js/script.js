@@ -36,3 +36,14 @@ for(let i = 0; i < scrollLink.length; i++) {
         });
     });
 }
+
+/* トップスクロール
+--------------------------------- */
+const toTop = document.getElementById('js_to-top');
+
+toTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
