@@ -1,3 +1,10 @@
+/* ローディング
+--------------------------------- */
+const loading = document.getElementById('js_loading');
+window.addEventListener('load', () => {
+    loading.classList.add('loaded');
+});
+
 /* ヘッダーメニューのドロワー
 --------------------------------- */
 const btn = document.getElementById('js_btn');
