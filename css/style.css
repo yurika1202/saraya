@@ -311,7 +311,7 @@ section {
   border-radius: 20px;
   position: fixed;
   top: 100px;
-  right: -500px;
+  right: -800px;
   -webkit-transition: right 0.4s;
   transition: right 0.4s;
   z-index: 100;
@@ -424,6 +424,7 @@ section {
   height: 30px;
   position: absolute;
   right: 0;
+  cursor: pointer;
 }
 .under-header__nav-btn > span {
   width: 100%;
