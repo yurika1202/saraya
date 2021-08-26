@@ -22,31 +22,36 @@
 </head>
 <body>
 
+    <!-- loading -->
+    <div id="js_loading" class="loading">
+        <div class="loading__spinner"></div><!-- /.loading__spinner -->
+    </div><!-- /.loading -->
+
     <header class="under-header">
 
         <div class="under-header__inner flex-wrapper_c">
-            <p class="under-header__logo">さらや</p><!-- /.under-header__logo -->
+            <a class="under-header__logo" href="/index.html">さらや</a><!-- /.under-header__logo -->
 
-            <button type="button" class="under-header__nav-btn">
+            <button type="button" class="under-header__nav-btn" id="js_btn">
                 <span></span>
                 <span></span>
                 <span></span>
             </button><!-- /.under-header__nav-btn -->
         </div><!-- /.under-header__inner -->
 
-        <div class="under-header__open-contents">
+        <div class="under-header__open-contents" id="js_open-contents">
             <nav class="under-header__nav">
                 <ul class="under-header__nav-list flex-wrapper_sb">
-                    <li class="under-header__nav-item"><a href="/index.html" class="under-header__nav-link">Top</a></li><!-- /.under-header__nav-item -->
-                    <li class="under-header__nav-item"><a href="/about/index.html" class="under-header__nav-link">About</a></li><!-- /.under-header__nav-item -->
-                    <li class="under-header__nav-item"><a href="/products/index.html" class="under-header__nav-link">Products</a></li><!-- /.under-header__nav-item -->
-                    <li class="under-header__nav-item"><a href="/contact/index.html" class="under-header__nav-link">Contact</a></li><!-- /.under-header__nav-item -->
+                    <li class="under-header__nav-item"><a href="/index.html" class="under-header__nav-link js_navBtn">Top</a></li><!-- /.under-header__nav-item -->
+                    <li class="under-header__nav-item"><a href="/about/index.html" class="under-header__nav-link js_navBtn">About</a></li><!-- /.under-header__nav-item -->
+                    <li class="under-header__nav-item"><a href="/products/index.html" class="under-header__nav-link js_navBtn">Products</a></li><!-- /.under-header__nav-item -->
+                    <li class="under-header__nav-item"><a href="/contact/index.html" class="under-header__nav-link js_navBtn">Contact</a></li><!-- /.under-header__nav-item -->
                 </ul><!-- /.under-header__nav-list -->
             </nav><!-- /.under-header__nav -->
 
             <!-- sns -->
             <div class="under-header__sns contents_mt">
-                <h2 class="section-title section-title_cap">Follow us</h2><!-- /.section-title -->
+                <p class="section-title section-title_cap">Follow us</p><!-- /.section-title -->
 
                 <div class="sns-contents under-header__sns_mt">
                     <ul class="sns-list flex-wrapper_c">
@@ -61,32 +66,32 @@
 
     </header><!-- /.under-header -->
 
-    <div class="top-view top-view_products layer_white">
+    <div class="top-view top-view_products layer_white anime anime_in">
         <h1 class="top-view__title top-view__title_products">Products</h1><!-- /.top-view__title -->
     </div><!-- /.top-view -->
 
     <main class="main__inner">
 
-        <section class="products">
+        <div class="products">
 
-            <p class="products__lead-text lh_25">
+            <p class="products__lead-text lh_25 anime anime_up">
                 こちらに掲載している作品は、お問い合わせフォームよりご購入いただけます。<br>
                 ※売り切れの場合もございます。<br>
                 ※詳しい在庫状況等はお電話、またはお問い合わせフォームよりお問い合わせください。
             </p><!-- /.products__lead-text -->
 
-        </section><!-- /.products -->
+        </div><!-- /.products -->
 
         <!-- yamada takashi -->
         <section class="artist-products">
 
 .
-            <div class="artist-products__banner artist-products__banner_yt layer_white">
+            <div class="artist-products__banner artist-products__banner_yt layer_white anime anime_up">
                 <h2 class="artist-products__title">yamada takashi</h2><!-- /.artist-artist-products__title -->
             </div><!-- /.artist-products__banner -->
 
             <ul class="artist-products-list">
-                <li class="artist-products-list__item">
+                <li class="artist-products-list__item anime_list">
                     <figure class="artist-products-list__img">
                         <img src="/products/img/y_item01.png" alt="しろいうつわ" width="246" height="246" loading="lazy" decoding="async">
                     </figure><!-- /.artist-artist-products-list__img -->
@@ -97,7 +102,7 @@
                     </div><!-- /.artist-artist-products-list__info -->
                 </li><!-- /.artist-artist-products-list__item -->
 
-                <li class="artist-products-list__item">
+                <li class="artist-products-list__item anime_list">
                     <figure class="artist-products-list__img">
                         <img src="/products/img/y_item02.png" alt="しろいおさら" width="246" height="246" loading="lazy" decoding="async">
                     </figure><!-- /.artist-products-list__img -->
@@ -108,7 +113,7 @@
                     </div><!-- /.artist-products-list__info -->
                 </li><!-- /.artist-products-list__item -->
 
-                <li class="artist-products-list__item">
+                <li class="artist-products-list__item anime_list">
                     <figure class="artist-products-list__img">
                         <img src="/products/img/y_item03.png" alt="きなりのおさら" width="246" height="246" loading="lazy" decoding="async">
                     </figure><!-- /.artist-products-list__img -->
@@ -119,7 +124,7 @@
                     </div><!-- /.artist-products-list__info -->
                 </li><!-- /.artist-products-list__item -->
 
-                <li class="artist-products-list__item">
+                <li class="artist-products-list__item anime_list">
                     <figure class="artist-products-list__img">
                         <img src="/products/img/y_item04.png" alt="ざらっとおさら" width="246" height="246" loading="lazy" decoding="async">
                     </figure><!-- /.artist-products-list__img -->
@@ -130,7 +135,7 @@
                     </div><!-- /.artist-products-list__info -->
                 </li><!-- /.artist-products-list__item -->
 
-                <li class="artist-products-list__item">
+                <li class="artist-products-list__item anime_list">
                     <figure class="artist-products-list__img">
                         <img src="/products/img/y_item01.png" alt="しろいうつわ" width="246" height="246" loading="lazy" decoding="async">
                     </figure><!-- /.artist-products-list__img -->
@@ -141,7 +146,7 @@
                     </div><!-- /.artist-products-list__info -->
                 </li><!-- /.artist-products-list__item -->
 
-                <li class="artist-products-list__item">
+                <li class="artist-products-list__item anime_list">
                     <figure class="artist-products-list__img">
                         <img src="/products/img/y_item01.png" alt="しろいうつわ" width="246" height="246" loading="lazy" decoding="async">
                     </figure><!-- /.artist-products-list__img -->
@@ -158,12 +163,12 @@
         <!-- n.dish -->
         <section class="artist-products">
 
-            <div class="artist-products__banner artist-products__banner_n layer_white">
+            <div class="artist-products__banner artist-products__banner_n layer_white anime anime_up">
                 <h2 class="artist-products__title">n.dish</h2><!-- /.artist-products__title -->
             </div><!-- /.artist-products__banner -->
 
             <ul class="artist-products-list">
-                <li class="artist-products-list__item">
+                <li class="artist-products-list__item anime_list">
                     <figure class="artist-products-list__img">
                         <img src="/products/img/n_item01.png" alt="blue dish" width="246" height="246" loading="lazy" decoding="async">
                     </figure><!-- /.artist-products-list__img -->
@@ -174,7 +179,7 @@
                     </div><!-- /.artist-products-list__info -->
                 </li><!-- /.artist-products-list__item -->
 
-                <li class="artist-products-list__item">
+                <li class="artist-products-list__item anime_list">
                     <figure class="artist-products-list__img">
                         <img src="/products/img/n_item02.png" alt="almond dish" width="246" height="246" loading="lazy" decoding="async">
                     </figure><!-- /.artist-products-list__img -->
@@ -185,7 +190,7 @@
                     </div><!-- /.artist-products-list__info -->
                 </li><!-- /.artist-products-list__item -->
 
-                <li class="artist-products-list__item">
+                <li class="artist-products-list__item anime_list">
                     <figure class="artist-products-list__img">
                         <img src="/products/img/n_item03.png" alt="pink dish" width="246" height="246" loading="lazy" decoding="async">
                     </figure><!-- /.artist-products-list__img -->
@@ -196,7 +201,7 @@
                     </div><!-- /.artist-products-list__info -->
                 </li><!-- /.artist-products-list__item -->
 
-                <li class="artist-products-list__item">
+                <li class="artist-products-list__item anime_list">
                     <figure class="artist-products-list__img">
                         <img src="/products/img/n_item04.png" alt="black dish" width="246" height="246" loading="lazy" decoding="async">
                     </figure><!-- /.artist-products-list__img -->
@@ -213,12 +218,12 @@
         <!-- saginuma koubou -->
         <section class="artist-products">
 
-            <div class="artist-products__banner artist-products__banner_s layer_white">
+            <div class="artist-products__banner artist-products__banner_s layer_white anime anime_up">
                 <h2 class="artist-products__title artist-products__title_wh">鷺沼工房</h2><!-- /.artist-products__title -->
             </div><!-- /.artist-products__banner -->
 
             <ul class="artist-products-list">
-                <li class="artist-products-list__item">
+                <li class="artist-products-list__item anime_list">
                     <figure class="artist-products-list__img">
                         <img src="/products/img/s_item01.png" alt="湯呑セット" width="246" height="246" loading="lazy" decoding="async">
                     </figure><!-- /.artist-products-list__img -->
@@ -229,7 +234,7 @@
                     </div><!-- /.artist-products-list__info -->
                 </li><!-- /.artist-products-list__item -->
 
-                <li class="artist-products-list__item">
+                <li class="artist-products-list__item anime_list">
                     <figure class="artist-products-list__img">
                         <img src="/products/img/s_item02.png" alt="菊" width="246" height="246" loading="lazy" decoding="async">
                     </figure><!-- /.artist-products-list__img -->
@@ -245,12 +250,12 @@
 
         <!-- nana -->
         <section class="artist-products">
-            <div class="artist-products__banner artist-products__banner_na layer_white">
+            <div class="artist-products__banner artist-products__banner_na layer_white anime anime_up">
                 <h2 class="artist-products__title">nana</h2><!-- /.artist-products__title -->
             </div><!-- /.artist-products__banner -->
 
             <ul class="artist-products-list">
-                <li class="artist-products-list__item">
+                <li class="artist-products-list__item anime_list">
                     <figure class="artist-products-list__img">
                         <img src="/products/img/na_item01.png" alt="nanaフォーク" width="246" height="246" loading="lazy" decoding="async">
                     </figure><!-- /.artist-products-list__img -->
@@ -261,7 +266,7 @@
                     </div><!-- /.artist-products-list__info -->
                 </li><!-- /.artist-products-list__item -->
 
-                <li class="artist-products-list__item">
+                <li class="artist-products-list__item anime_list">
                     <figure class="artist-products-list__img">
                         <img src="/products/img/na_item02.png" alt="リーフスプーン" width="246" height="246" loading="lazy" decoding="async">
                     </figure><!-- /.artist-products-list__img -->
@@ -272,7 +277,7 @@
                     </div><!-- /.artist-products-list__info -->
                 </li><!-- /.artist-products-list__item -->
 
-                <li class="artist-products-list__item">
+                <li class="artist-products-list__item anime_list">
                     <figure class="artist-products-list__img">
                         <img src="/products/img/na_item03.png" alt="カトラリーセット" width="246" height="246" loading="lazy" decoding="async">
                     </figure><!-- /.artist-products-list__img -->
@@ -286,7 +291,7 @@
 
         </section><!-- /.artist-products -->
 
-        <div class="recruit products-recruit_mt">
+        <div class="recruit products-recruit_mt anime anime_up">
             <p class="recruit__text">
                 食器作家さんの出品を随時募集しております。<br>
                 お電話またはお問い合わせフォームよりご連絡ください。
@@ -297,7 +302,7 @@
         <section class="sns">
             <h2 class="section-title section-title_cap">Follow us</h2><!-- /.section-title -->
 
-            <div class="sns-contents contents_mt">
+            <div class="sns-contents contents_mt anime anime_up">
 
                 <ul class="sns-list flex-wrapper_c">
                     <li class="sns-list__item"><a href="#" class="sns-list__link"><i class="fab fa-instagram"></i></a></li><!-- /.sns-list__item -->
@@ -320,7 +325,7 @@
 
         </div><!-- /.footer-contents -->
 
-        <div class="to-top"></div><!-- /.to-top -->
+        <div class="to-top" id="js_to-top"></div><!-- /.to-top -->
 
     </footer><!-- /.footer -->
 

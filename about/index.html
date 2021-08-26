@@ -22,31 +22,36 @@
 </head>
 <body>
 
+    <!-- loading -->
+    <div id="js_loading" class="loading">
+        <div class="loading__spinner"></div><!-- /.loading__spinner -->
+    </div><!-- /.loading -->
+
     <header class="under-header">
 
         <div class="under-header__inner flex-wrapper_c">
-            <p class="under-header__logo">さらや</p><!-- /.under-header__logo -->
+            <a class="under-header__logo" href="/index.html">さらや</a><!-- /.under-header__logo -->
 
-            <button type="button" class="under-header__nav-btn">
+            <button type="button" class="under-header__nav-btn" id="js_btn">
                 <span></span>
                 <span></span>
                 <span></span>
             </button><!-- /.under-header__nav-btn -->
         </div><!-- /.under-header__inner -->
 
-        <div class="under-header__open-contents">
+        <div class="under-header__open-contents" id="js_open-contents">
             <nav class="under-header__nav">
                 <ul class="under-header__nav-list flex-wrapper_sb">
-                    <li class="under-header__nav-item"><a href="/index.html" class="under-header__nav-link">Top</a></li><!-- /.under-header__nav-item -->
-                    <li class="under-header__nav-item"><a href="/about/index.html" class="under-header__nav-link">About</a></li><!-- /.under-header__nav-item -->
-                    <li class="under-header__nav-item"><a href="/products/index.html" class="under-header__nav-link">Products</a></li><!-- /.under-header__nav-item -->
-                    <li class="under-header__nav-item"><a href="/contact/index.html" class="under-header__nav-link">Contact</a></li><!-- /.under-header__nav-item -->
+                    <li class="under-header__nav-item"><a href="/index.html" class="under-header__nav-link js_navBtn">Top</a></li><!-- /.under-header__nav-item -->
+                    <li class="under-header__nav-item"><a href="/about/index.html" class="under-header__nav-link js_navBtn">About</a></li><!-- /.under-header__nav-item -->
+                    <li class="under-header__nav-item"><a href="/products/index.html" class="under-header__nav-link js_navBtn">Products</a></li><!-- /.under-header__nav-item -->
+                    <li class="under-header__nav-item"><a href="/contact/index.html" class="under-header__nav-link js_navBtn">Contact</a></li><!-- /.under-header__nav-item -->
                 </ul><!-- /.under-header__nav-list -->
             </nav><!-- /.under-header__nav -->
 
             <!-- sns -->
             <div class="under-header__sns contents_mt">
-                <h2 class="section-title section-title_cap">Follow us</h2><!-- /.section-title -->
+                <p class="section-title section-title_cap">Follow us</p><!-- /.section-title -->
 
                 <div class="sns-contents under-header__sns_mt">
                     <ul class="sns-list flex-wrapper_c">
@@ -61,7 +66,7 @@
 
     </header><!-- /.under-header -->
 
-    <div class="top-view top-view_about layer_white">
+    <div class="top-view top-view_about layer_white anime anime_in">
         <h1 class="top-view__title">About</h1><!-- /.top-view__title -->
     </div><!-- /.top-view -->
 
@@ -72,9 +77,9 @@
 
             <div class="concept-contents">
 
-                <h2 class="concept-title">「食器は料理の着物である」<br class="br_sp">ー北大路魯山人</h2><!-- /.concept-title -->
+                <h2 class="concept-title anime anime_up">「食器は料理の着物である」<br class="br_sp">ー北大路魯山人</h2><!-- /.concept-title -->
 
-                <p class="concept-message contents_mt lh_25">
+                <p class="concept-message contents_mt lh_25 anime anime_up">
                     美食家として知られる北大路魯山人先生は、食器の選択を非常に重要視されておられました。<br>
                     料理を包み、彩る。<br>
                     美しいうつわは料理の魅力を最大限に引き出す力があります。<br>
@@ -84,12 +89,12 @@
             </div><!-- /.concept-contents -->
 
             <div class="concept__img-wrapper">
-                <div class="concept__img concept__img_01 layer_white">
-                    <img src="/about/img/about01.jpg" alt="さらやの外観" width="454" height="293" loading="lazy" decoding="async">
+                <div class="concept__img concept__img_01 layer_white anime_list">
+                    <img src="/about/img/about01.jpg" alt="さらやの外観">
                 </div><!-- /.concept__img -->
 
-                <div class="concept__img concept__img_02 layer_white">
-                    <img src="/about/img/about02.jpg" alt="さらやの商品イメージ" width="454" height="293" loading="lazy" decoding="async">
+                <div class="concept__img concept__img_02 layer_white anime_list">
+                    <img src="/about/img/about02.jpg" alt="さらやの商品イメージ">
                 </div><!-- /.concept__img -->
             </div><!-- /.concept__img-wrapper -->
 
@@ -101,14 +106,14 @@
 
             <div class="message-contents contents_mt">
 
-                <p class="message__text lh_25">
+                <p class="message__text lh_25 anime anime_up">
                     さらやは新人の食器作家さんの作品を取り扱っています。<br>
                     これまでにない革新的なデザイン、そしてどこか温もりのある手触り。<br>
                     そして、ひとつひとつの食器たちにある個性。<br>
                     あなたと食器の一期一会の出会いを、お待ちしております。
                 </p><!-- /.message__text -->
 
-                <div class="recruit about-recruit_mt">
+                <div class="recruit about-recruit_mt anime anime_up">
                     <p class="recruit__text">
                         食器作家さんの出品を随時募集しております。<br>
                         お電話またはお問い合わせフォームよりご連絡ください。
@@ -122,7 +127,7 @@
         <section id="access" class="access">
             <h2 class="section-title">Access</h2><!-- /.section-title -->
 
-            <div class="access-contents contents_mt flex-wrapper_sb flex-wrapper_md-block">
+            <div class="access-contents contents_mt flex-wrapper_sb flex-wrapper_md-block anime anime_up">
 
                 <div class="access__map-wrapper">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.8224439425167!2d139.6666989155021!3d35.60744618021153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f51f0fbffc7b%3A0x92ea42cf08497ba6!2z44CSMTUyLTAwMzUg5p2x5Lqs6YO955uu6buS5Yy66Ieq55Sx44GM5LiY77yR5LiB55uu77yZ4oiS77yY!5e0!3m2!1sja!2sjp!4v1628966321092!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -153,7 +158,7 @@
         <section class="sns">
             <h2 class="section-title section-title_cap">Follow us</h2><!-- /.section-title -->
 
-            <div class="sns-contents contents_mt">
+            <div class="sns-contents contents_mt anime anime_up">
 
                 <ul class="sns-list flex-wrapper_c">
                     <li class="sns-list__item"><a href="#" class="sns-list__link"><i class="fab fa-instagram"></i></a></li><!-- /.sns-list__item -->
@@ -176,7 +181,7 @@
 
         </div><!-- /.footer-contents -->
 
-        <div class="to-top"></div><!-- /.to-top -->
+        <div class="to-top" id="js_to-top"></div><!-- /.to-top -->
 
     </footer><!-- /.footer -->
 

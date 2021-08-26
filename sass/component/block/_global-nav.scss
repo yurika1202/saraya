@@ -65,7 +65,7 @@
         }
     }
 
-    &.js-open_btn {
+    &.js_open-btn {
         > span {
             &:first-of-type {
                 top: 50%;
@@ -93,17 +93,16 @@
 .open-contents_sp {
     width: 35%;
     min-width: 270px;
-    height: 50%;
     padding: 70px;
     background: rgba(g.$cMain, .8);
     border-radius: 20px;
     position: fixed;
     top: 100px;
-    right: -500px;
+    right: -800px;
     transition: right .4s;
     z-index: 100;
 
-    &.js-open_nav {
+    &.js_open-nav {
         right: 30px;
     }
 }
