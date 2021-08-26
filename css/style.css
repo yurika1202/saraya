@@ -79,6 +79,72 @@ section {
   margin-top: 200px;
 }
 
+/* animation
+----------------------------------------- */
+.anime {
+  opacity: 0;
+}
+
+.anime_in.scroll-in {
+  -webkit-animation: fadeIn 1s ease-in-out forwards;
+          animation: fadeIn 1s ease-in-out forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.anime_up.scroll-in {
+  -webkit-animation: fadeUp 0.8s ease-in-out forwards;
+          animation: fadeUp 0.8s ease-in-out forwards;
+}
+
+@-webkit-keyframes fadeUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+.anime_list {
+  opacity: 0;
+}
+.anime_list.scroll-in {
+  -webkit-animation: fadeUp 0.5s ease-in-out forwards;
+          animation: fadeUp 0.5s ease-in-out forwards;
+}
+
 /* header
 -------------------------------- */
 .header {

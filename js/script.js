@@ -54,3 +54,37 @@ toTop.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+/* アニメーション
+--------------------------------- */
+window.onload = () => {
+    const anime = document.querySelectorAll('.anime');
+    const animeList = document.querySelectorAll('.anime_list');
+    const cb = function(entries, observer) {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add('scroll-in');
+                io.unobserve(entry.target);
+            }
+        });
+    }
+    const cbList = function(entries, observer) {
+        entries.forEach((entry, i) => {
+            const delay = i * 500;
+            if(entry.isIntersecting) {
+                setTimeout(function() {
+                    entry.target.classList.add('scroll-in');
+                }, delay);
+            }
+        });
+    }
+
+    const options = {
+        root: null,
+        rootMargin: "-300px 0px 0px 0px"
+    }
+    const io = new IntersectionObserver(cb, options);
+    const ioList = new IntersectionObserver(cbList, options);
+    anime.forEach(el => io.observe(el));
+    animeList.forEach(el => ioList.observe(el));
+}
