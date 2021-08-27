@@ -10,6 +10,10 @@ body {
     letter-spacing: .18em;
     color: g.$cText_bk;
     background: g.$cBg_main;
+
+    @include g.mq(sm) {
+        font-size: g.rem(14px);
+    }
 }
 
 img {

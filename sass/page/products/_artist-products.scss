@@ -16,19 +16,19 @@
     position: relative;
 
     &_yt {
-        background: url(/common/img/yamadatakashi.jpg) no-repeat center 70% / cover;
+        background: url(../common/img/yamadatakashi.jpg) no-repeat center 70% / cover;
     }
 
     &_n {
-        background: url(/common/img/ndish.jpg) no-repeat center 75% / cover;
+        background: url(../common/img/ndish.jpg) no-repeat center 75% / cover;
     }
 
     &_s {
-        background: url(/common/img/saginuma.jpg) no-repeat center 85% / cover;
+        background: url(../common/img/saginuma.jpg) no-repeat center 85% / cover;
     }
 
     &_na {
-        background: url(/common/img/nana.jpg) no-repeat center 43% / cover;
+        background: url(../common/img/nana.jpg) no-repeat center 43% / cover;
     }
 
     @include g.mq(md) {
@@ -57,6 +57,7 @@
     margin-top: 50px;
     display: flex;
     overflow-x: scroll;
+    overflow-y: hidden;
 
     &::-webkit-scrollbar {
         display: none;

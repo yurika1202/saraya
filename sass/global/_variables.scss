@@ -4,12 +4,7 @@
 $inner: 1200px;
 
 // フォント
-@font-face {
-    font-family: 'honokamarugo';
-    src: url(/common/font/font_1_honokamarugo_1.1.ttf);
-}
 $fontMain: 'Noto Sans JP', sans-serif;
-$fontTitle: honokamarugo, sans-serif;
 
 // カラー
 $cMain: #6699A1;

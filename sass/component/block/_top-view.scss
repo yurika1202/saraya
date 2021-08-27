@@ -10,15 +10,15 @@
     position: relative;
 
     &_about {
-        background: url(/about/img/about_topview.jpg) no-repeat center 26% / cover;
+        background: url(../about/img/about_topview.jpg) no-repeat center 26% / cover;
     }
 
     &_products {
-        background: url(/products/img/products_topview.jpg) no-repeat center 65% / cover;
+        background: url(../products/img/products_topview.jpg) no-repeat center 65% / cover;
     }
 
     &_contact {
-        background: url(/contact/img/contact_topview.jpg) no-repeat center 40% / cover;
+        background: url(../contact/img/contact_topview.jpg) no-repeat center 40% / cover;
     }
 
     @include g.mq(md) {
